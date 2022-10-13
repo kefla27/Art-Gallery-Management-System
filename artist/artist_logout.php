@@ -1,0 +1,9 @@
+<?php
+session_start(); 
+if(isset($_GET['id'])){
+$_SESSION["artistid"]="";	
+unset($_SESSION["artistid"]);
+header('Location:../artist/');
+}
+mysqli_close($con);	
+?>
